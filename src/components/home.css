@@ -1,0 +1,266 @@
+.content {
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  max-width: 90%;
+  gap: 50px;
+  margin-top: 0px;
+}
+
+/* Text and Button Styling */
+.text-container {
+  flex: 1;
+  max-width: 600px;
+}
+
+.description {
+  font-size: 22px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.start {
+  padding: 20px;
+  width: 500px;
+  background-color: rgba(255, 0, 221, 0.537);
+  color: black;
+  font-size: x-large;
+}
+
+/* Image Styling */
+.image {
+ 
+  height: 600px;
+  max-width: 300%;
+  margin-left: 700px;
+  margin-top: -600px;
+}
+
+.title {
+  font-size: 50px;
+  margin-left: 40px;
+}
+
+/* Hamburger Menu */
+.hamburger-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 30px;
+  background: none;
+  border: none;
+  z-index: 1000;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: rgba(226, 43, 226, 0.604);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu.hidden {
+  transform: translateX(100%);
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.menu li {
+  padding: 15px 0;
+  font-size: 30px;
+  color: rgb(14, 1, 1);
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-bottom: 1px solid #555;
+}
+
+.menu li:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Features Section */
+.features-section {
+  text-align: center;
+  padding: 50px 20px;
+  margin-top: 120px;
+  clear: both;
+  position: relative;
+ max-width: 1200px;
+  margin: 0 auto;
+} 
+
+.features-heading {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 30px;
+  height: 250px;
+  width: 300px;
+}
+
+.feature-card:hover {
+  transform: translateY(-20px);
+}
+
+.feature-icon {
+  font-size: 70px;
+}
+
+.feature-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.feature-description {
+  font-size: 20px;
+  color: #000000;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .features-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .features-section {
+    margin-top: 200px;
+  }
+} 
+.comparison-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 80px;
+  max-width: 100%;
+}
+
+.comparison-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 500px;
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+}
+
+.comparison-card:hover {
+  transform: translateY(-10px);
+}
+
+.comparison-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.comparison-card h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.comparison-card p {
+  font-size: 18px;
+  color: #000000;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+/* Differentiation for "Without" and "With" cards */
+.without {
+  border: 3px solid red;
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.with {
+  border: 3px solid green;
+  background-color: rgba(0, 255, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .comparison-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer {
+  background-color: #001a8c74;
+  color: #0c0c0c;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+  width: 100%;
+  position: relative; /* Try changing to "fixed" if needed */
+  bottom: 0;
+  border-radius: 10px;
+}
+
+.footer-links ul, .footer-social ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+  
+}
+
+.footer-links li, .footer-social li {
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  font-size: x-large;
+}
+
+.footer-links li:hover, .footer-social li:hover {
+  color: #520028;
+  transform: scale(1.1);
+}
+
+.footer-social i {
+  font-size: 20px;
+} 
+
+.footer{
+  font-weight: 40px;
+}

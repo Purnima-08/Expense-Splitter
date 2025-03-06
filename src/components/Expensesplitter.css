@@ -1,0 +1,206 @@
+/* Ensure the container is centered */
+.contain {
+  background-color: #c81b946d;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 550px;
+  text-align: center;
+  margin: 100px auto;
+  padding: 40px;
+  position: relative;
+}
+
+/* Input row - Align Name, Amount, and Remove Button in the same line */
+.input-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Input fields */
+.input-row input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Remove button */
+.input-row button {
+  background-color: rgba(22, 160, 158, 0.8);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 8px 12px;
+  white-space: nowrap;
+}
+
+.input-row button:hover {
+  background-color: #cc00006c;
+}
+
+/* General button styling */
+button {
+  background-color: rgba(22, 160, 158, 0.8);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+button:hover {
+  background-color: #000000;
+}
+
+/* Button group */
+.gap {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+/* Hamburger Button - Always in the Top Right Corner */
+/* Hamburger Button - Always in the Top Right Corner */
+.hamburger-container {
+  position: fixed; /* Keeps it at the top-right */
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1000; /* Ensures it's always above other elements */
+  color: black; /* Adjust color as needed */
+}
+
+
+/* Side Menu */
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px; /* Adjust width */
+  height: 100%;
+  background-color: rgba(138, 43, 226, 0.9); /* Violet sidebar */
+  color: white;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+  z-index: 999; /* Ensures it appears over content */
+}
+
+/* Hide menu when closed */
+.hidden {
+  transform: translateX(100%);
+}
+
+/* Style the menu items */
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 15px 0;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: left;
+}
+
+.expense-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.expense-title-input {
+  width: 80%;
+  padding: 10px;
+  font-size: 1em;
+  margin: 10px auto;
+  display: block;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.expense-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center content */
+  text-align: center; /* Center text */
+  padding: 20px;
+}
+
+.description {
+  max-width: 600px; /* Limit width for better readability */
+  margin-bottom: 20px; /* Add spacing between description and features */
+}
+
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between feature cards */
+}
+.expense-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center content */
+  text-align: center;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.description {
+  max-width: 600px;
+  margin-bottom: 40px; /* Space below description */
+}
+
+.get-started {
+  background: #e91e63;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.features-section {
+  width: 100%;
+  text-align: center;
+}
+
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.feature-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+}
+
+.feature-icon {
+  font-size: 2rem;
+}
+
+.feature-title {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.feature-description {
+  font-size: 0.9rem;
+  color: gray;
+}

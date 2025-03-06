@@ -1,0 +1,75 @@
+body {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnlEbxFrSuvfvwbct9dqyjhLEWUa1fg4eDyw&s');  
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cover {
+    background-color: #c81b945c;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50   0px;
+    height: 500px;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 70%; /* Centered */
+    transform: translateX(-50%); /* Ensure it's centered */
+    padding: 4px;
+    position: relative; /* Ensure child elements position correctly */
+  
+}
+
+.user {
+    padding: 10px;
+}
+
+.input {
+    height: 30px;
+    width: 190px;
+}
+
+.pass {
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.button {
+    height: 40px;
+    margin-top: 50px;
+    padding: 5px 75px;
+    background-color: rgba(22, 160, 158, 0.651);
+    color: rgb(0, 0, 0);
+}
+
+button:hover {
+    background-color: #1ea034a9;
+}
+
+.bk {
+    background-color: rgba(21, 118, 148, 0.733);
+    margin-top: 150px;
+    height: 50px;
+    width: 300px;
+}
+
+.point {
+    position: absolute;
+    left: -720px; /* Moves the image to the left of the login form */
+    top: 50%; /* Centers it vertically */
+    transform: translateY(-50%); /* Perfect vertical alignment */
+}
+
+.point img {
+   height: 600px;
+   width: 600px;
+}
+
+  .privacy-image img {
+    width: 850px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 10px;
+    margin-left: 750px;
+    margin-top: -900px;
+
+  }
+  
